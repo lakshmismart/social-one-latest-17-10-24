@@ -1,0 +1,169 @@
+/* Ensure body takes full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
+  
+  /* Container with proper spacing */
+  .container-fluid {
+    padding: 0 15px;
+  }
+  
+  /* Main business profile content with padding to avoid overlap */
+  .business-profile {
+    padding-top: 70px; /* Adjust to match header height */
+    padding-bottom: 80px; /* Adjust to ensure space for footer */
+    min-height: calc(100vh - 150px); /* Adjust as needed */
+  }
+  
+  /* Full-height profile image */
+  .profile-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Progress bar styles */
+  .progress-bar {
+    margin-bottom: 30px;
+  }
+  
+  .progress-steps {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .progress-steps li {
+    color: #aaa;
+    font-size: 16px;
+  }
+  
+  .progress-steps li.active-step {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Form title styles */
+  .form-title {
+    color: #6c63ff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* Tags container and individual tag styles */
+  .tags-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tag {
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Button styles */
+  .btn-next {
+    width: 100%;
+    background-color: #6c63ff;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .btn-next:hover {
+    background-color: #5a54d1;
+  }
+
+
+  .card-container{
+    margin:  5%; 
+    position: absolute;
+    width: 85%; 
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+    height: 770px; 
+    border-radius: 5px; 
+    backdrop-filter: blur(14px); 
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 10px; 
+    text-align: center;
+  }
+  .blue-div{
+    left: 83%;
+    top: 4%;
+    width: 100%;
+    max-width: 170px ;
+    margin: 0% 0% 0% 0%;
+  }
+  .card-row{
+    position: absolute;
+    margin: 6% 0%;
+    width : 100%;
+  }
+  .trans-div{
+    transform: translate(10px, -70px);
+    position: relative;
+    z-index: 1;
+    width: 35%;
+  }
+  .business-text-container{
+    border-bottom: 1px solid #C9C9C9;
+    padding: 2% auto;
+  }
+
+  .business-text{
+    outline: none;
+    border :none;
+    color : #373636;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+  }
+
+  .business-text::placeholder{
+    color : #373636;
+  }
+  .nxt-btn{
+    border-radius: 20px !important;
+  }
+
+  .tab-active{
+    border-bottom : 1px solid blue;
+
+  }
+
+  @media (max-width: 480px) {
+    .card-height{
+      height: 1100px;
+    }
+    .top-rated-img{
+      max-width: 150px !important;
+      top:-50% !important;
+    }
+    .blue-div{
+      max-width: 70px !important ;
+    }
+    .trans-div{
+      max-width: 100px;
+      top:-20% !important;
+    }
+    .trans-div2{
+      top:-35% !important;
+      max-width: 150px !important;
+    }
+
+    .card-container{
+     height: 1080px !important;
+      width: 80%; 
+      top :5% !important;
+    }
+  }
+

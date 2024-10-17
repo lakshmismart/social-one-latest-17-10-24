@@ -1,0 +1,15 @@
+.business-pictures-container{
+    width: 257px;
+    height: 185px;    
+}
+
+.add-logo-container{
+    width: 182px;
+    height: 182px;
+    top: 1344px;
+    left: 327px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 50%;
+
+}

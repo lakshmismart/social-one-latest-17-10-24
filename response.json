@@ -1,0 +1,320 @@
+array:3 [ // app\Helpers\GeocodingHelper.php:59
+  "type" => "FeatureCollection"
+  "features" => array:5 [
+    0 => array:4 [
+      "type" => "Feature"
+      "properties" => array:22 [
+        "datasource" => array:4 [
+          "sourcename" => "openstreetmap"
+          "attribution" => "© OpenStreetMap contributors"
+          "license" => "Open Database License"
+          "url" => "https://www.openstreetmap.org/copyright"
+        ]
+        "name" => "Medavakkam Main Road"
+        "ref" => "SH48A"
+        "country" => "India"
+        "country_code" => "in"
+        "state" => "Tamil Nadu"
+        "state_district" => "Chengalpattu District"
+        "county" => "Pallavaram"
+        "postcode" => "600117"
+        "suburb" => "Keelkattalai"
+        "street" => "Medavakkam Main Road"
+        "lon" => 80.1848255
+        "lat" => 12.947733
+        "state_code" => "TN"
+        "result_type" => "street"
+        "formatted" => "Medavakkam Main Road, Keelkattalai, - 600117, TN, India"
+        "address_line1" => "Medavakkam Main Road"
+        "address_line2" => "Keelkattalai, - 600117, TN, India"
+        "timezone" => array:7 [
+          "name" => "Asia/Kolkata"
+          "offset_STD" => "+05:30"
+          "offset_STD_seconds" => 19800
+          "offset_DST" => "+05:30"
+          "offset_DST_seconds" => 19800
+          "abbreviation_STD" => "IST"
+          "abbreviation_DST" => "IST"
+        ]
+        "plus_code" => "7M42W5XM+3W"
+        "rank" => array:6 [
+          "importance" => 0.35334333333333
+          "popularity" => 2.204348396296
+          "confidence" => 0.5
+          "confidence_city_level" => 1
+          "confidence_street_level" => 1
+          "match_type" => "match_by_street"
+        ]
+        "place_id" => "51e17d552ed40b54405910ae80423de52940f00102f90159d1e24400000000c002049203144d65646176616b6b616d204d61696e20526f6164"
+      ]
+      "geometry" => array:2 [
+        "type" => "Point"
+        "coordinates" => array:2 [
+          0 => 80.1848255
+          1 => 12.947733
+        ]
+      ]
+      "bbox" => array:4 [
+        0 => 80.1832739
+        1 => 12.9457697
+        2 => 80.1856968
+        3 => 12.950257
+      ]
+    ]
+    1 => array:3 [
+      "type" => "Feature"
+      "geometry" => array:2 [
+        "type" => "Point"
+        "coordinates" => array:2 [
+          0 => 80.190682
+          1 => 12.970415
+        ]
+      ]
+      "properties" => array:23 [
+        "country_code" => "in"
+        "housenumber" => "Plot no : 6"
+        "street" => "Medavakkam Main Road"
+        "country" => "India"
+        "county" => "Chennai"
+        "datasource" => array:4 [
+          "sourcename" => "openstreetmap"
+          "attribution" => "© OpenStreetMap contributors"
+          "license" => "Open Database License"
+          "url" => "https://www.openstreetmap.org/copyright"
+        ]
+        "postcode" => "600091"
+        "state" => "Tamil Nadu"
+        "city" => "Chennai"
+        "district" => "Alandur"
+        "suburb" => "Ward 167"
+        "state_code" => "TN"
+        "lon" => 80.190682
+        "lat" => 12.970415
+        "result_type" => "building"
+        "formatted" => "Plot no : 6, Medavakkam Main Road, Ward 167, Chennai - 600091, TN, India"
+        "address_line1" => "Plot no : 6, Medavakkam Main Road"
+        "address_line2" => "Ward 167, Chennai - 600091, TN, India"
+        "timezone" => array:7 [
+          "name" => "Asia/Kolkata"
+          "offset_STD" => "+05:30"
+          "offset_STD_seconds" => 19800
+          "offset_DST" => "+05:30"
+          "offset_DST_seconds" => 19800
+          "abbreviation_STD" => "IST"
+          "abbreviation_DST" => "IST"
+        ]
+        "plus_code" => "7M42X5CR+57"
+        "plus_code_short" => "X5CR+57 Chennai, India"
+        "rank" => array:6 [
+          "popularity" => 2.3457909948416
+          "confidence" => 0.9
+          "confidence_city_level" => 1
+          "confidence_street_level" => 1
+          "confidence_building_level" => 1
+          "match_type" => "match_by_building"
+        ]
+        "place_id" => "51e57b4622340c5440597e18213cdaf02940f00103f901692dd80c01000000c00203e203256f70656e7374726565746d61703a616464726573733a6e6f64652f34353130343631323839"
+      ]
+    ]
+    2 => array:4 [
+      "type" => "Feature"
+      "properties" => array:27 [
+        "datasource" => array:4 [
+          "sourcename" => "openstreetmap"
+          "attribution" => "© OpenStreetMap contributors"
+          "license" => "Open Database License"
+          "url" => "https://www.openstreetmap.org/copyright"
+        ]
+        "name" => "Rajendra's"
+        "country" => "India"
+        "country_code" => "in"
+        "state" => "Tamil Nadu"
+        "state_district" => "Chennai District"
+        "county" => "Alandur"
+        "postcode" => "600091"
+        "district" => "Zone 12 Alandur"
+        "neighbourhood" => "CMWSSB Division 169"
+        "suburb" => "Zone 14 Perungudi"
+        "street" => "Mount - Medavakkam Road"
+        "housenumber" => "Plot no : 6"
+        "lon" => 80.1906815
+        "lat" => 12.9704153
+        "state_code" => "TN"
+        "result_type" => "amenity"
+        "city" => "Chennai"
+        "formatted" => "Rajendra's, Plot no : 6, Mount - Medavakkam Road, Zone 14 Perungudi, Chennai - 600091, TN, India"
+        "address_line1" => "Rajendra's"
+        "address_line2" => "Plot no : 6, Mount - Medavakkam Road, Zone 14 Perungudi, Chennai - 600091, TN, India"
+        "category" => "commercial.clothing.clothes"
+        "timezone" => array:7 [
+          "name" => "Asia/Kolkata"
+          "offset_STD" => "+05:30"
+          "offset_STD_seconds" => 19800
+          "offset_DST" => "+05:30"
+          "offset_DST_seconds" => 19800
+          "abbreviation_STD" => "IST"
+          "abbreviation_DST" => "IST"
+        ]
+        "plus_code" => "7M42X5CR+57"
+        "plus_code_short" => "X5CR+57 Chennai, Alandur, India"
+        "rank" => array:6 [
+          "importance" => 9.9999999999545E-6
+          "confidence" => 0.567
+          "confidence_city_level" => 1
+          "confidence_street_level" => 0.63
+          "confidence_building_level" => 0.63
+          "match_type" => "full_match"
+        ]
+        "place_id" => "51f19c2d20340c54405979133246daf02940f00103f901692dd80c01000000c0020192030a52616a656e6472612773"
+      ]
+      "geometry" => array:2 [
+        "type" => "Point"
+        "coordinates" => array:2 [
+          0 => 80.1906815
+          1 => 12.9704153
+        ]
+      ]
+      "bbox" => array:4 [
+        0 => 80.1906315
+        1 => 12.9703653
+        2 => 80.1907315
+        3 => 12.9704653
+      ]
+    ]
+    3 => array:4 [
+      "type" => "Feature"
+      "properties" => array:22 [
+        "datasource" => array:4 [
+          "sourcename" => "openstreetmap"
+          "attribution" => "© OpenStreetMap contributors"
+          "license" => "Open Database License"
+          "url" => "https://www.openstreetmap.org/copyright"
+        ]
+        "name" => "Medavakkam Main Road"
+        "ref" => "SH48A"
+        "country" => "India"
+        "country_code" => "in"
+        "state" => "Tamil Nadu"
+        "state_district" => "Chennai District"
+        "county" => "Sholinganallur"
+        "postcode" => "600129"
+        "suburb" => "Nanmangalam"
+        "street" => "Medavakkam Main Road"
+        "lon" => 80.1822913
+        "lat" => 12.9379034
+        "state_code" => "TN"
+        "result_type" => "street"
+        "formatted" => "Medavakkam Main Road, Nanmangalam, - 600129, TN, India"
+        "address_line1" => "Medavakkam Main Road"
+        "address_line2" => "Nanmangalam, - 600129, TN, India"
+        "timezone" => array:7 [
+          "name" => "Asia/Kolkata"
+          "offset_STD" => "+05:30"
+          "offset_STD_seconds" => 19800
+          "offset_DST" => "+05:30"
+          "offset_DST_seconds" => 19800
+          "abbreviation_STD" => "IST"
+          "abbreviation_DST" => "IST"
+        ]
+        "plus_code" => "7M42W5QJ+5W"
+        "rank" => array:6 [
+          "importance" => 0.35334333333333
+          "popularity" => 1.9768933867345
+          "confidence" => 0.5
+          "confidence_city_level" => 1
+          "confidence_street_level" => 1
+          "match_type" => "match_by_street"
+        ]
+        "place_id" => "511af620a9aa0b5440594a9ddbdf34e02940f00102f9018f30af0a00000000c002049203144d65646176616b6b616d204d61696e20526f6164"
+      ]
+      "geometry" => array:2 [
+        "type" => "Point"
+        "coordinates" => array:2 [
+          0 => 80.1822913
+          1 => 12.9379034
+        ]
+      ]
+      "bbox" => array:4 [
+        0 => 80.1815124
+        1 => 12.930179
+        2 => 80.1832739
+        3 => 12.9457697
+      ]
+    ]
+    4 => array:4 [
+      "type" => "Feature"
+      "properties" => array:25 [
+        "datasource" => array:4 [
+          "sourcename" => "openstreetmap"
+          "attribution" => "© OpenStreetMap contributors"
+          "license" => "Open Database License"
+          "url" => "https://www.openstreetmap.org/copyright"
+        ]
+        "name" => "Medavakkam Main Road"
+        "country" => "India"
+        "country_code" => "in"
+        "state" => "Tamil Nadu"
+        "state_district" => "Chennai District"
+        "county" => "Alandur"
+        "postcode" => "600088"
+        "district" => "Zone 12 Alandur"
+        "neighbourhood" => "CMWSSB Division 163"
+        "suburb" => "Ward 163"
+        "street" => "Medavakkam Main Road"
+        "lon" => 80.2012383
+        "lat" => 12.9950449
+        "state_code" => "TN"
+        "result_type" => "street"
+        "city" => "Chennai"
+        "formatted" => "Medavakkam Main Road, Ward 163, Chennai - 600088, TN, India"
+        "address_line1" => "Medavakkam Main Road"
+        "address_line2" => "Ward 163, Chennai - 600088, TN, India"
+        "timezone" => array:7 [
+          "name" => "Asia/Kolkata"
+          "offset_STD" => "+05:30"
+          "offset_STD_seconds" => 19800
+          "offset_DST" => "+05:30"
+          "offset_DST_seconds" => 19800
+          "abbreviation_STD" => "IST"
+          "abbreviation_DST" => "IST"
+        ]
+        "plus_code" => "7M42X6W2+2F"
+        "plus_code_short" => "X6W2+2F Chennai, Alandur, India"
+        "rank" => array:6 [
+          "importance" => 0.35334333333333
+          "popularity" => 2.9820395096214
+          "confidence" => 0.5
+          "confidence_city_level" => 1
+          "confidence_street_level" => 1
+          "match_type" => "match_by_street"
+        ]
+        "place_id" => "51f84c9b16e10c5440596a1a6f8676fd2940f00102f9019145b34c00000000c002049203144d65646176616b6b616d204d61696e20526f6164"
+      ]
+      "geometry" => array:2 [
+        "type" => "Point"
+        "coordinates" => array:2 [
+          0 => 80.2012383
+          1 => 12.9950449
+        ]
+      ]
+      "bbox" => array:4 [
+        0 => 80.2012383
+        1 => 12.9950449
+        2 => 80.2012703
+        3 => 12.9950459
+      ]
+    ]
+  ]
+  "query" => array:2 [
+    "text" => "KFC, Survey No 4, Raghava Ngr, Plot No 6, Medavakkam Main Rd, Duraisamy Nagar, Madipakkam, Kanchipuram, Chennai, Tamil Nadu 600117"
+    "parsed" => array:7 [
+      "house" => "kfc survey no 4 raghava ngr"
+      "housenumber" => "plot no 6"
+      "street" => "medavakkam main rd"
+      "postcode" => "600117"
+      "city" => "chennai"
+      "state" => "tamil nadu"
+      "expected_type" => "amenity"
+    ]
+  ]
+]

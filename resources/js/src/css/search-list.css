@@ -1,0 +1,88 @@
+
+
+
+
+    .filter-menus{
+        display :grid;
+        grid-template-columns: auto auto auto auto auto;
+        width : 70%;
+        margin: 3% auto;
+        overflow: hidden;
+    }
+    .shop-grid-item{
+        width: 90%;
+        max-width: fit-content !important;
+    }
+
+    .shoplist-details{
+        margin: 10% 0% !important;
+        width: 100% !important;   
+        max-width: 100% !important;  
+    }
+
+    .shoplist-shop-heading, .shoplist-shop-location{
+        white-space: nowrap;
+        max-width: 100%;
+        /* overflow: hidden; */
+        text-overflow: ellipsis;
+    }
+
+    .shoplist-rightcontentbox{
+        max-width: 290px;
+    }
+    
+
+
+@media (max-width:428px ) {
+    .filter-menus{
+        display :grid;
+        grid-template-columns: auto auto auto auto auto;
+        width : 100%;
+        margin: 3% auto;
+        overflow: hidden;
+        gap: 5%;
+    }
+
+    /* .shoplist-details{
+        margin: 10% 5% !important;
+        width: 100% !important;   
+        max-width: 280px !important;  
+    } */
+
+    /* .shoplist-shop-heading, .shoplist-shop-location{
+        white-space: nowrap;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } */
+}
+
+
+@media (min-width:550px)and (max-width:768px ) {
+    .filter-menus{
+        display :grid;
+        grid-template-columns: auto auto auto auto auto;
+        width : 100%;
+        margin: 3% auto;
+        overflow: hidden;
+        gap: 5%;
+    }
+
+    .shoplist-rightcontentbox{
+        max-width: 200px;
+    }
+
+   
+}
+
+
+@media (min-width:768px) and (max-width:992px ) {
+    
+}
+
+@media (min-width:993px) and (max-width:1200px ) {
+    
+}
+
+
+
