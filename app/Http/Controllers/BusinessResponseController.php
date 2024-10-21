@@ -7,14 +7,13 @@ use Illuminate\Http\Request;
 
 class BusinessResponseController extends Controller
 {
-    // Display a listing of business responses
+
     public function index()
     {
         $responses = BusinessResponse::all();
         return response()->json($responses);
     }
 
-    // Display a specific business response by ID
     public function show($id)
     {
         $response = BusinessResponse::find($id);
@@ -25,7 +24,7 @@ class BusinessResponseController extends Controller
         }
     }
 
-    // Create a new business response
+
     public function store(Request $request)
     {
         $request->validate([
@@ -40,7 +39,7 @@ class BusinessResponseController extends Controller
         return response()->json($response, 201);
     }
 
-    // Update an existing business response
+
     public function update(Request $request, $id)
     {
         $response = BusinessResponse::find($id);
@@ -60,7 +59,7 @@ class BusinessResponseController extends Controller
         }
     }
 
-    // Delete a business response by ID
+    
     public function destroy($id)
     {
         $response = BusinessResponse::find($id);

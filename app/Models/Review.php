@@ -6,6 +6,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Models\User;
 
 class Review extends Model
 {
@@ -35,6 +36,10 @@ class Review extends Model
     public function business()
     {
         return $this->belongsTo(Business::class, 'business_id');
+    }
+
+    public function users(){
+        return $this->belongsTo(User::class, 'reviewer_user_id');
     }
 }
 

@@ -46,6 +46,17 @@
     color: lightgray;
 }
 
+.star:hover{
+    color:gold;
+}
+
 .star.selected {
     color: gold;
+}
+.blue-btn{
+    border-radius: 50px;
+    background-color: #4563DA;
+    color: white;
+    padding:2px;
+
 }

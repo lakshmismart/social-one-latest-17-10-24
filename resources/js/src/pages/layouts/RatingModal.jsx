@@ -6,10 +6,12 @@ import axios from 'axios'; // Make sure to import axios
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BASE_URL } from "../../App";
+import {useNavigate} from 'react-router-dom'
 
 const RatingModal = ({ isOpen, onClose, businessId }) => {
     const [rating, setRating] = useState(0);
     const [review, setReview] = useState('');
+    const navigate = useNavigate();
 
     if (!isOpen) return null; // Don't render if not open
 
@@ -25,19 +27,25 @@ const RatingModal = ({ isOpen, onClose, businessId }) => {
         e.preventDefault();
         const token = sessionStorage.getItem("authToken");
         const business_id = businessId
+        const review_text = review
         console.log(token, business_id)
         axios.post(`${BASE_URL}/api/reviews`, {
             business_id,
             rating,
-            review,
+            review_text,
         }, {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
         })
         .then(response => {
-            console.log("Rating submitted: ", response.data);
-            onClose(); // Close the modal after submission
+            console.log("Rating submitted: ", response.data.message);
+            toast.success(response.data.message,{
+                autoClose:3000,
+                onClose : ()=>{
+                    onClose();
+                }
+            });
         })
         .catch(error => {
             if (error.response) {
@@ -63,14 +71,14 @@ const RatingModal = ({ isOpen, onClose, businessId }) => {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <button className="close-button" onClick={onClose}>✖</button>
-                <div className="row">
+                <div className="row mt-4">
                     <div className="col-md-6">
                         <div className='image-container image-container-medium'>
                             <img src={ratingreview} className='img-fluid' alt="rating-img"/>
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <p className="content-color large-font-width">Rate Your Experience</p>
+                        <p className="content-color medium-font-width">Rate Your Experience</p>
                         <div className="star-rating">
                             {[1, 2, 3, 4, 5].map((star) => (
                                 <span
@@ -82,7 +90,7 @@ const RatingModal = ({ isOpen, onClose, businessId }) => {
                                 </span>
                             ))}
                         </div>
-                        <p className="content-color medium-font-width">Write A Detailed Review</p>
+                        <p className="content-color medium-font-width mt-3">Write A Detailed Review</p>
                         <form onSubmit={handleSubmit}>
                             <textarea
                                 className='review-textarea'
@@ -90,7 +98,10 @@ const RatingModal = ({ isOpen, onClose, businessId }) => {
                                 onChange={handleReviewChange}
                             />
                             <br/>
-                            <button className='btn btn-info' type="submit">Submit</button>
+                            <div className="d-flex">
+                                <button className='blue-btn btn w-75 mt-2' type="submit">Submit</button>
+                              
+                            </div>
                         </form>                        
                     </div>
                 </div>
