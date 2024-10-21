@@ -44,7 +44,6 @@ Route::middleware('auth:sanctum')->prefix('businesses')->group(function () {
     Route::get('/{id}', [BusinessController::class, 'show'])->name('businesses.show');
     Route::put('/{id}', [BusinessController::class, 'update'])->name('businesses.update');
     Route::delete('/{id}', [BusinessController::class, 'destroy'])->name('businesses.destroy');
-    // Route::post('/reviews', [ReviewController::class, 'store'])->name('reviews.store');
 });
 
 

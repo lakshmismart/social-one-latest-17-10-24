@@ -21,7 +21,8 @@ class BusinessController extends Controller
    
     public function show($id)
     {
-        $business =Business::find($id);      
+        $business =Business::with('reviews.users')->find($id);   
+      
         if ($business) {
             return response()->json(["data"=>$business]);
         } else {

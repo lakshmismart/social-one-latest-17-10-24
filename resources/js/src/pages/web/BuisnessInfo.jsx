@@ -71,7 +71,6 @@ import { useParams } from 'react-router-dom';
         },[id])
 
         const post = posts[0];
-        console.log("posstos",posts.business_name)
 
         const [imageError, setImageError] = useState(false);
 
@@ -88,6 +87,13 @@ import { useParams } from 'react-router-dom';
 
         const openModal = () => setIsModalOpen(true);
         const closeModal = () => setIsModalOpen(false);
+
+        useEffect(() => {
+            const token = sessionStorage.getItem("authToken");
+            if (!token) {
+                navigate("/login"); // Redirect to login if token is missing
+            }
+        }, [navigate]);
 
         return(
             <div>         
@@ -346,44 +352,31 @@ import { useParams } from 'react-router-dom';
                                             <img src={Horizontal_line} alt="horizontalline" className='img-fluid'/>
                                         </div>
                                     </Stack>
-                                    <Box className="mt-4" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start'}}>
-                                        <Box className="image-container image-container-xsmall">
-                                            <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
-                                        </Box>
-                                        <Box xs={12} sm={4} className="mx-1 text-left">
-                                            <Typography variant="h6" gutterBottom className="overflow-hidden m-0 shoplist-shop-heading heading-color">
-                                                Muthu Kumaran
-                                            </Typography>
-                                            <Stack spacing={1}>
-                                            <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly
-                                                sx={{ color: '#83C7EC' }} /> 
-                                            </Stack>                                      
-                                            
-                                            <Typography variant="body2" className="text-wrap pe-4 overflow-hidden shoplist-shop-location content-color">
-                                                This is Wonderful site, which helps me to get more offer's shop near by me.
-                                            </Typography>
-                                            
-                                        </Box>
-                                    </Box>
-                                    <Box className="mt-4" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start'}}>
-                                        <Box className="image-container image-container-xsmall">
-                                            <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
-                                        </Box>
-                                        <Box xs={12} sm={4} className="mx-1 text-left">
-                                            <Typography variant="h6" gutterBottom className="overflow-hidden m-0 shoplist-shop-heading heading-color">
-                                                Dhana Lakshmi
-                                            </Typography>
-                                            <Stack spacing={1}>
-                                            <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly
-                                                sx={{ color: '#83C7EC' }} /> 
-                                            </Stack>                                      
-            
-                                            <Typography variant="body2" className="text-wrap pe-4 overflow-hidden shoplist-shop-location content-color">
-                                                This is Wonderful site, which helps me to get more offer's shop near by me.
-                                            </Typography>
-                                            
-                                        </Box>
-                                    </Box>
+                                    {posts && posts.reviews && posts.reviews.length > 0 ? (
+                                         posts.reviews.map((review, index) => (
+                                            <Box className="mt-4" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start'}}>
+                                                <Box className="image-container image-container-xsmall">
+                                                    <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
+                                                </Box>
+                                                <Box xs={12} sm={4} className="mx-1 text-left">
+                                                    <Typography variant="h6" gutterBottom className="overflow-hidden m-0 shoplist-shop-heading heading-color">
+                                                        {review.users.business_owner_name ? review.users.business_owner_name : 'Name not available.'}
+                                                    </Typography>
+                                                    <Stack spacing={1}>
+                                                    <Rating name="half-rating-read" defaultValue={review.rating} precision={0.5} readOnly
+                                                        sx={{ color: '#83C7EC' }} /> 
+                                                    </Stack>                                      
+                                                                
+                                                    <Typography key={index} variant="body2" className="text-wrap pe-4 overflow-hidden shoplist-shop-location content-color">
+                                                        {review.review_text}. 
+                                                    </Typography>   
+                                                </Box>
+                                            </Box>
+                                        ))
+                                    ) 
+                                    : (
+                                        <Typography variant="body2">No reviews available.</Typography>
+                                    )}
                                     <p className="text-end content-grey mt-2 px-4">View All</p>
                                 </Stack>
                             </div>
