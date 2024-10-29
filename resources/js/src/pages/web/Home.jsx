@@ -263,13 +263,13 @@ class Home extends Component{
             <Header />
             <section className="hero">
                 <div className="container">
-                    <div className="row justify-content-around align-items-center">
+                    <div className="d-lg-flex d-sm-block justify-content-center align-items-center">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12" w-50>
                             <div className="search-box">
                             <h1>Discover The <span className="text-primary">Best Local <br/>Businesses</span> And Share <br />Your Experiences.</h1>
                         </div>
                         <br />
-                        <div className="fsd justify-content-between">
+                        <div className="fsd d-flex jusitfy-content-between justify-content-between">
                             <div className="input-container">
                                 <input type="text" name="search_field" onChange={this.handleChange} placeholder="Search The Shops" />
 

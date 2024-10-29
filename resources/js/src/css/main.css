@@ -79,6 +79,10 @@
     overflow: hidden;
 }
 
+.image-container-logowidth{
+    max-width: 35px;
+}
+
 .image-container-small {
     max-width: var(--small-width) !important;
 }

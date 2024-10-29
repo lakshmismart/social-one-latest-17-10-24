@@ -978,12 +978,19 @@ h5.font-weight-bold3 {
 
 }
 
-@media screen and (min-width: 1400px) and (max-width: 1500px) {
+@media screen and (min-width: 1400px) and (max-width: 2000px) {
     .container,
     .custom-section {
-        width: 95%;
+        width: 95% !important;
         margin: 0 auto;
     }
+    .input-container{
+        width: 65% !important;
+    }
+    .fsd{
+        margin-right: 7%;
+    }
+
 }
 
 
@@ -1005,8 +1012,5 @@ h5.font-weight-bold3 {
 }
 
 
-/* .align-items-center {
-    align-items: center !important;
-    align-items: left;
-} */
+
 

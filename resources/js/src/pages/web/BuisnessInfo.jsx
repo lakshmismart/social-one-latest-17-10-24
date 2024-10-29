@@ -743,7 +743,7 @@ const BusinessInfo = () => {
                 {/*Branches */}
                 <div className='branches'>
                     <Stack direction="column" className="my-3">
-                        <Stack direction="row" >
+                        <Stack direction="row" className="gap-2 align-items-center" >
                             <Typography variant="h6" className="">Branches </Typography>
                             <div className="image-container image-container-large">
                                 <img src={Horizontal_line} alt="horizontalline" className='img-fluid' />
@@ -756,8 +756,8 @@ const BusinessInfo = () => {
                                     <Box className="image-container image-container-medium medium-shopimage-container">
                                         <img src={shop1} alt="shop1" className="img-fluid" />
                                     </Box>
-                                    <Box className="shoplist-details mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
-                                        <Box className="image-container image-container-small">
+                                    <Box className="shoplist-details gap-2 mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
+                                        <Box className="image-container image-container-logowidth">
                                             <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                         </Box>
                                         <Box xs={12} sm={4} className="shoplist-rightcontentbox m-0 text-left">
@@ -769,9 +769,8 @@ const BusinessInfo = () => {
                                                     sx={{ color: '#83C7EC' }} />
                                             </Stack>
                                             <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
-                                                <div className="image-container image-container-small">
-                                                    <img src={location_icon} alt="location_icon" className="m-0 img-fluid"
-                                                        style={{ width: '30px', height: '30px' }} />
+                                                <div className="image-container image-container-xsmall">
+                                                    <img src={location_icon} alt="location_icon" className="m-0 img-fluid"/>                                                    
                                                 </div>
                                                 <Typography variant="body2" className="overflow-hidden shoplist-shop-location content-color">
                                                     Anna Salai, Angalaaman Kovil, Chennai.
@@ -799,9 +798,8 @@ const BusinessInfo = () => {
                                                     sx={{ color: '#83C7EC' }} />
                                             </Stack>
                                             <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
-                                                <div className="image-container image-container-small">
-                                                    <img src={location_icon} alt="location_icon" className="m-0 img-fluid"
-                                                        style={{ width: '30px', height: '30px' }} />
+                                                <div className="image-container image-container-xsmall">
+                                                    <img src={location_icon} alt="location_icon" className="m-0 img-fluid"/>
                                                 </div>
                                                 <Typography variant="body2" className="overflow-hidden shoplist-shop-location content-color">
                                                     Anna Salai, Angalaaman Kovil, Chennai.

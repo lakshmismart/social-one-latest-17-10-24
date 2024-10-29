@@ -71,9 +71,9 @@ const RatingModal = ({ isOpen, onClose, businessId }) => {
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <button className="close-button" onClick={onClose}>✖</button>
-                <div className="row mt-4">
+                <div className="row mx-0 mt-4">
                     <div className="col-md-6">
-                        <div className='image-container image-container-medium'>
+                        <div className='image-container image-container-medium mx-auto'>
                             <img src={ratingreview} className='img-fluid' alt="rating-img"/>
                         </div>
                     </div>
