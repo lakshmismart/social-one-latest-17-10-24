@@ -14,7 +14,7 @@
     --extra-large-width : 100%;
 
     --border-right: 1px solid #ccc;
-    --large-width: 100%;  
+    --large-width: 100%;
 }
 
 :root{
@@ -72,7 +72,7 @@
 }
 
 .image-container{
-    align-items: center; 
+    align-items: center;
     /* height : 100%;           */
     width : 100%;
     position: relative;
@@ -122,7 +122,7 @@
 
     .medium-shopimage-container{
         width: 337px;
-        height: 120px;                
+        height: 120px;
         left: 0px;
         gap: 0px;
         border-radius: 10px;
@@ -133,7 +133,7 @@
 
     .business-fixed-container{
         width: 100%;
-        height: 14rem;                
+        height: 14rem;
         left: 0px;
         gap: 0px;
         border-radius: 10px;
@@ -184,16 +184,16 @@
         }
     }
 
-    @media screen and (min-width : 768px) and (max-width: 991.98px) { 
+    @media screen and (min-width : 768px) and (max-width: 991.98px) {
         .large-font-width{
             font-size: var(--font-size-medium) !important;
         }
     }
 
     @media screen and (min-width : 992px) and (max-width: 1400px) {
-    
+
     }
 
     @media screen and (min-width : 1400px) and (max-width: 1500px) {
-        
+
     }
