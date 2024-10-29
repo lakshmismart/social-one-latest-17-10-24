@@ -39,7 +39,7 @@ const RatingModal = ({ isOpen, onClose, businessId }) => {
             }
         })
         .then(response => {
-            console.log("Rating submitted: ", response.data.message);
+            console.log("Rating submitted: ", response);
             toast.success(response.data.message,{
                 autoClose:3000,
                 onClose : ()=>{

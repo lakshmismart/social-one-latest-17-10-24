@@ -479,22 +479,22 @@ class Home extends Component{
                             <h2>Get The Exact And Updated <br/> Details Of The Shop.</h2>
                             <div className="justify-content-center flex-wrap gap-5 d-lg-flex d-md-flex">
                                 <div className="d-block">
-                                    <div className="image-container justify-content-center">
+                                    <div className="image-container justify-content-center text-center">
                                         <img src={range} alt="Shop Details" />
                                     </div>
-                                    <p className="text-white">Cover More Range</p>
+                                    <p className="text-white my-3">Cover More Range</p>
                                 </div>
-                                <div className="d-flex flex-column align-items-center">
-                                    <div className="image-container mb-2">
+                                <div className="d-flex flex-column align-items-center ">
+                                    <div className="image-container mb-2  text-center">
                                         <img src={location_pic} alt="Location Updates" />
                                     </div>
-                                    <p className="text-white">Location Updates</p>
+                                    <p className="text-white my-3">Location Updates</p>
                                 </div>
                                 <div className="d-flex flex-column align-items-center">
-                                    <div className="image-container mb-2">
+                                    <div className="image-container mb-2  text-center">
                                         <img src={explore} alt="Explore Shop By Yourself" />
                                     </div>
-                                    <p className="text-white">Explore Shop By Yourself</p>
+                                    <p className="text-white my-3">Explore Shop By Yourself</p>
                                 </div>
                             </div>
                         </div>

@@ -7,6 +7,7 @@ namespace App\Http\Controllers;
 use App\Models\Review;
 use Illuminate\Http\Request;
 use App\Interface\ReviewRepositoryInterface;
+use Illuminate\Support\Facades\Auth;
 
 class ReviewController extends Controller
 {
@@ -19,10 +20,11 @@ class ReviewController extends Controller
 
     public function store(Request $request)
     {
+        try {
 
         $validatedData = $request->validate([
             'business_id' => 'required|exists:businesses,id',
-            'reviewer_user_id' => 'required|exists:users,id',
+            'reviewer_user_id' => 'nullable|exists:users,id',
             'rating' => 'required|integer|between:1,5',
             'review_text' => 'nullable|string',
             'review_title' => 'nullable|string|max:255',
@@ -31,21 +33,16 @@ class ReviewController extends Controller
             'review_status' => 'nullable|in:Published,Pending,Rejected',
             'response_from_business_owner' => 'nullable|string',
         ]);
-
-        try {
-
+        $validatedData['reviewer_user_id'] = Auth::user()->id;
             if ($validatedData['rating'] == 1 && empty($validatedData['review_text'])) {
                 return response()->json([
                     'error' => 'A review text is required for a rating of 1.'
                 ], 400);
             }
-
-
             $review = $this->reviewRepository->create($validatedData);
 
-            return response()->json($review, 201);
+            return response()->json(['message'=>'Your Review Submitted Successfully.', 201]);
         } catch (\Exception $e) {
-
             return response()->json([
                 'error' => 'Failed to create review.',
                 'message' => $e->getMessage(),
