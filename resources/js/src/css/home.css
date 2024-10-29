@@ -106,10 +106,12 @@ nav ul li a.active {
 }
 
 .search-box h1 {
-    font-size: 2rem;
-    text-align: left;
-    font-weight: 300;
     font-size: 46px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 46px;
+    font-family: 'Open Sans';
+    line-height: 62.64px;
 }
 
 .input-container {
@@ -223,10 +225,10 @@ nav ul li a.active {
             color: #575454; */
 
 
-                font-family: Montserrat;
-                font-size: 29px;
-                font-weight: 900;
-                line-height: 39.67px;
+                font-family: 'Montserrat';
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 43.47px;
                 text-align: left;
                 color: #575454;
 
@@ -241,8 +243,8 @@ nav ul li a.active {
     color: #706e6e;
 }
 .mns p {
-    font-family: Open Sans;
-    font-size: 16px;
+    font-family: 'Open Sans';
+    font-size: 20px;
     font-weight: 400;
     line-height: 29.96px;
     text-align: left;
@@ -256,15 +258,15 @@ nav ul li a.active {
     text-align: center;
 }
 .steps-heading {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 42.67px;
     text-align: center;
     color: #706e6e;
 }
 .step h3 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 28px;
     font-weight: 500;
     line-height: 34.13px;
@@ -273,7 +275,7 @@ nav ul li a.active {
 }
 
 .step p {
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     font-size: 20px;
     font-weight: 400;
     line-height: 27.24px;
@@ -285,14 +287,10 @@ nav ul li a.active {
 }
 
 .shop-details {
-    /* padding: 50px 0; */
     background-color: #364fb2;
     color: #fff;
     text-align: center;
     height: 420px;
-    /* position: absolute; */
-    /* width: 1686px; */
-
 }
 
 
@@ -541,7 +539,7 @@ footer {
     margin-bottom: 5px;
     font-family: Montserrat;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 34.13px;
     text-align: left;
     color: #716f6f;
@@ -550,8 +548,8 @@ footer {
 .step-content p {
     margin: 0;
     color: #747171;
-    font-family: Open Sans;
-    font-size: 14px;
+    font-family: 'Open Sans';
+    font-size: 18px;
     font-weight: 400;
     line-height: 27.24px;
     text-align: left;
@@ -559,14 +557,13 @@ footer {
 }
 
 .position-relative {
-    /* position: relative; */
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .position-relative::before {
     content: "";
     position: absolute;
-    left: 93px;
+    left: 82px;
     top: 55px;
     bottom: 0;
     width: 2px;
@@ -580,7 +577,7 @@ footer {
 }
 
 .step-content {
-    margin-left: 0px;
+    margin-left: 30px;
 }
 
 /* .shop-details {
@@ -653,10 +650,15 @@ footer {
 
 }
 
-.align-items-center1 {
+/* .align-items-center1 {
     text-align: left;
     margin-left: 0rem;
 
+} */
+
+.img-fluid {
+    max-width: 112%;
+    height: auto;
 }
 
 
@@ -733,7 +735,18 @@ h5.font-weight-bold3 {
     margin-left: 0rem;
 }
 
+.top{
+    
+    text-align: left;
+    
+    font-size: 35px;
+    font-family: 'Open Sans';
+    line-height: 62.64px;
+}
 
+.container{
+    font-family: 'Open Sans';
+}
 
 /* ===================================================================================================== */
 

@@ -212,7 +212,7 @@ const BusinessInfo = () => {
 
                         <div>
                             <Stack direction="column" className="my-3">
-                                <Stack direction="row" sx={{ my: '3' }}>
+                                <Stack direction="row" sx={{ my: '3' }} className="gap-2 align-items-center mb-3">
                                     <Typography variant="h6">On Going Offers</Typography>
                                     <div className="image-container image-container-large">
                                         <img src={Horizontal_line} alt="horizontalline" className='img-fluid' />
@@ -234,7 +234,7 @@ const BusinessInfo = () => {
 
                         <div>
                             <Stack direction="column" className="my-3">
-                                <Stack direction="row">
+                                <Stack direction="row" className="gap-2 align-items-center mb-3">
                                     <Typography variant="h6">Photos </Typography>
                                     <div className="image-container image-container-large">
                                         <img src={Horizontal_line} alt="horizontalline" className='img-fluid' />
@@ -282,7 +282,7 @@ const BusinessInfo = () => {
                         {/* address section */}
                         <div>
                             <Stack direction="column" className="my-3">
-                                <Stack direction="row" sx={{ my: '3' }}>
+                                <Stack direction="row" sx={{ my: '3' }} className="gap-2 align-items-center mb-3">
                                     <Typography variant="h6" className="">Details </Typography>
                                     <div className="image-container image-container-large">
                                         <img src={Horizontal_line} alt="horizontalline" className='img-fluid' />
@@ -314,7 +314,7 @@ const BusinessInfo = () => {
 
                         {/* Review section */}
                         <div className="reviews">
-                            <Stack direction="row" >
+                            <Stack direction="row" className="gap-2 align-items-center">
                                 <Typography variant="h6" className="">Reviews</Typography>
                                 <div className="image-container image-container-large" >
                                     <img src={Horizontal_line} alt="horizontalline" className='img-fluid' />
@@ -440,7 +440,7 @@ const BusinessInfo = () => {
                                 <div class="d-lg-flex gap-3 align-items-center mt-5 mx-3 px-5 d-sm-block">
                                     <div class="d-flex gap-3 align-items-center">
                                         <h4 class="text-primary percent">4.8</h4>
-                                        <div class="percent1"> 
+                                        <div class="percent1">
                                             <h4>12 Ratings</h4>
                                             <h4>42 Reviews</h4>
                                         </div>
@@ -450,149 +450,11 @@ const BusinessInfo = () => {
                             </div>
                         </div>
                         {/* 
-                                            <Grid container alignItems="center" spacing={2}>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked" ></span>
-                                                <Grid item xs>
-                                                <LinearProgress
-                                                    variant="determinate"
-                                                    value={100}
-                                                    sx={{
-                                                    height: '17px',
-                                                    borderRadius: '21px',
-                                                    width: '250px',
-                                                    bgcolor: '#E0E0E0',
-                                                    '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
-                                                    }}
-                                                />
-                                                </Grid>
-                                                <Grid item>
-                                                <Typography variant="body2" color="text.secondary" sx={{ font:'Montserrat', fontSize:'21.74px', height:'26.5px', fontWeight:'400'}}>
-                                                    12
-                                                </Typography>
-                                                </Grid>
-                                            </Grid>
-
-                                            <Grid container alignItems="center" spacing={2}>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked" ></span>
-                                                
-                                                <Grid item xs>
-                                                <LinearProgress
-                                                    variant="determinate"
-                                                    value={80}
-                                                    sx={{
-                                                    height: '17px',
-                                                    borderRadius: '21px',
-                                                    width: '250px',
-                                                    bgcolor: '#E0E0E0',
-                                                    '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
-                                                    }}
-                                                />
-                                                </Grid>
-                                                <Grid item>
-                                                <Typography variant="body2" color="text.secondary" sx={{ font:'Montserrat', fontSize:'21.74px', height:'26.5px', fontWeight:'400'}}>
-                                                    8 
-                                                </Typography>
-                                                </Grid>
-                                            </Grid>
-
-                                            <Grid container alignItems="center" spacing={2}>
-                                             
-                                                <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked" ></span>
-                                                
-                                                <Grid item xs>
-                                                <LinearProgress
-                                                    variant="determinate"
-                                                    value={60}
-                                                    sx={{
-                                                    height: '17px',
-                                                    borderRadius: '21px',
-                                                    width: '250px',
-                                                    bgcolor: '#E0E0E0',
-                                                    '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
-                                                    }}
-                                                />
-                                                </Grid>
-                                                <Grid item>
-                                                <Typography variant="body2" color="text.secondary" sx={{ font:'Montserrat', fontSize:'21.74px', height:'26.5px', fontWeight:'400'}}>
-                                                    5
-                                                </Typography>
-                                                </Grid>
-                                            </Grid>
-
-                                            <Grid container alignItems="center" spacing={2}>
-                                                
-                                                <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked" ></span>
-                                                
-                                                <Grid item xs>
-                                                <LinearProgress
-                                                    variant="determinate"
-                                                    value={40}
-                                                    sx={{
-                                                    height: '17px',
-                                                    borderRadius: '21px',
-                                                    width: '250px',
-                                                    bgcolor: '#E0E0E0',
-                                                    '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
-                                                    }}
-                                                />
-                                                </Grid>
-                                                <Grid item>
-                                                <Typography variant="body2" color="text.secondary" sx={{ font:'Montserrat', fontSize:'21.74px', height:'26.5px', fontWeight:'400'}}>
-                                                    3 
-                                                </Typography>
-                                                </Grid>
-                                            </Grid>
-
-                                            <Grid container alignItems="center" spacing={2}>
-                                                
-                                                <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked" ></span>
-                                                
-                                                <Grid item xs>
-                                                <LinearProgress
-                                                    variant="determinate"
-                                                    value={20}
-                                                    sx={{
-                                                    height: '17px',
-                                                    borderRadius: '21px',
-                                                    width: '250px',
-                                                    bgcolor: '#E0E0E0',
-                                                    '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
-                                                    }}
-                                                />
-                                                </Grid>
-                                                <Grid item>
-                                                <Typography variant="body2" color="text.secondary" sx={{ font:'Montserrat', fontSize:'21.74px', height:'26.5px', fontWeight:'400'}}>
-                                                    1
-                                                </Typography>
-                                                </Grid>
-                                            </Grid> */}
-
-
-
+                                           
                         {/* customer Review section */}
                         <div className='customer-review-section'>
                             <Stack direction="column" className="my-3">
-                                <Stack direction="row" >
+                                <Stack direction="row" className="gap-2 align-items-center mb-3">
                                     <Typography variant="h6" className="">Customer Reviews </Typography>
                                     <div className="image-container image-container-large">
                                         <img src={Horizontal_line} alt="horizontalline" className='img-fluid' />
@@ -639,7 +501,7 @@ const BusinessInfo = () => {
                                             <Box className="image-container image-container-medium mx-auto">
                                                 <img src={shop1} alt="shop1" className="img-fluid" />
                                             </Box>
-                                            <Box className="shoplist-details mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
+                                            <Box className="shoplist-details gap-2 mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
                                                 <Box className="image-container image-container-xsmall">
                                                     <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                                 </Box>
@@ -669,7 +531,7 @@ const BusinessInfo = () => {
                                             <Box className="image-container image-container-medium">
                                                 <img src={shop2} alt="shop1" className="mx-auto img-fluid" />
                                             </Box>
-                                            <Box className="shoplist-details mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
+                                            <Box className="shoplist-details gap-2 mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
                                                 <Box className="image-container image-container-xsmall">
                                                     <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                                 </Box>
@@ -699,7 +561,7 @@ const BusinessInfo = () => {
                                             <Box className="image-container image-container-medium ">
                                                 <img src={shop3} alt="shop1" className="mx-auto img-fluid" />
                                             </Box>
-                                            <Box className="shoplist-details mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
+                                            <Box className="shoplist-details gap-2 mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
                                                 <Box className="image-container image-container-xsmall">
                                                     <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                                 </Box>
@@ -746,7 +608,7 @@ const BusinessInfo = () => {
                 {/*Branches */}
                 <div className='branches'>
                     <Stack direction="column" className="my-3">
-                        <Stack direction="row" className="gap-2 align-items-center" >
+                        <Stack direction="row" className="gap-2 align-items-center mb-3" >
                             <Typography variant="h6" className="">Branches </Typography>
                             <div className="image-container image-container-large">
                                 <img src={Horizontal_line} alt="horizontalline" className='img-fluid' />
@@ -760,7 +622,7 @@ const BusinessInfo = () => {
                                         <img src={shop1} alt="shop1" className="img-fluid" />
                                     </Box>
                                     <Box className="shoplist-details gap-2 mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
-                                        <Box className="image-container image-container-logowidth">
+                                        <Box className="image-container image-container-small">
                                             <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                         </Box>
                                         <Box xs={12} sm={4} className="shoplist-rightcontentbox m-0 text-left">
@@ -773,7 +635,7 @@ const BusinessInfo = () => {
                                             </Stack>
                                             <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
                                                 <div className="image-container image-container-xsmall">
-                                                    <img src={location_icon} alt="location_icon" className="m-0 img-fluid"/>                                                    
+                                                    <img src={location_icon} alt="location_icon" className="m-0 img-fluid" />
                                                 </div>
                                                 <Typography variant="body2" className="overflow-hidden shoplist-shop-location content-color">
                                                     Anna Salai, Angalaaman Kovil, Chennai.
@@ -788,7 +650,7 @@ const BusinessInfo = () => {
                                     <Box className="image-container image-container-medium medium-shopimage-container ">
                                         <img src={shop1} alt="shop1" className="img-fluid" />
                                     </Box>
-                                    <Box className="shoplist-details mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
+                                    <Box className="shoplist-details gap-2 mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
                                         <Box className="image-container image-container-small">
                                             <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                         </Box>
@@ -802,7 +664,7 @@ const BusinessInfo = () => {
                                             </Stack>
                                             <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
                                                 <div className="image-container image-container-xsmall">
-                                                    <img src={location_icon} alt="location_icon" className="m-0 img-fluid"/>
+                                                    <img src={location_icon} alt="location_icon" className="m-0 img-fluid" />
                                                 </div>
                                                 <Typography variant="body2" className="overflow-hidden shoplist-shop-location content-color">
                                                     Anna Salai, Angalaaman Kovil, Chennai.
@@ -817,7 +679,7 @@ const BusinessInfo = () => {
                                     <Box className="image-container image-container-medium medium-shopimage-container">
                                         <img src={shop1} alt="shop1" className="img-fluid" />
                                     </Box>
-                                    <Box className="shoplist-details mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
+                                    <Box className="shoplist-details gap-2 mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin: '5% auto' }}>
                                         <Box className="image-container image-container-small">
                                             <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                         </Box>
