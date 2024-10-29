@@ -320,130 +320,133 @@ const BusinessInfo = () => {
                                     <img src={Horizontal_line} alt="horizontalline" className='img-fluid' />
                                 </div>
                             </Stack>
-                            <div  className="d-lg-flex d-sm-block mp-3">
-                                <Stack className="mx-1" spacing={1} >
-                                    <div className="d-flex justify-content-end gap-2 align-items-center">
-                                        <div className="d-flex justify-content-end align-items-center" >
-                                            <span class="fa fa-star checked fz-5"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
+                            <div className="d-lg-flex d-sm-block mp-3">
+                                <div className="d-lg-flex align-items-center mt-4 mx-0 px-2 d-sm-block" >
+                                    <Stack className="mx-1" spacing={1} >
+                                        <div className="d-flex justify-content-end gap-2 align-items-center">
+                                            <div className="d-flex justify-content-end align-items-center" >
+                                                <span class="fa fa-star checked fz-5"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
 
+                                            </div>
+                                            <div>
+                                                <LinearProgress
+                                                    variant="determinate"
+                                                    value={100}
+                                                    sx={{
+                                                        height: '17px',
+                                                        borderRadius: '21px',
+                                                        width: '210px',
+                                                        bgcolor: '#E0E0E0',
+                                                        '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
+                                                    }}
+                                                />
+                                            </div>
+                                            <h4>07</h4>
                                         </div>
-                                        <div>
-                                            <LinearProgress
-                                                variant="determinate"
-                                                value={100}
-                                                sx={{
-                                                    height: '17px',
-                                                    borderRadius: '21px',
-                                                    width: '250px',
-                                                    bgcolor: '#E0E0E0',
-                                                    '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
-                                                }}
-                                            />
+                                        <div className="d-flex justify-content-end gap-2 align-items-center">
+                                            <div className="d-flex justify-content-end align-items-center" >
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+
+                                            </div>
+                                            <div>
+                                                <LinearProgress
+                                                    variant="determinate"
+                                                    value={80}
+                                                    sx={{
+                                                        height: '17px',
+                                                        borderRadius: '21px',
+                                                        width: '210px',
+                                                        bgcolor: '#E0E0E0',
+                                                        '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
+                                                    }}
+                                                />
+                                            </div>
+                                            <h4>02</h4>
                                         </div>
-                                        <h4>07</h4>
+                                        <div className="d-flex justify-content-end gap-2 align-items-center">
+                                            <div className="d-flex justify-content-end align-items-center" >
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+
+
+                                            </div>
+                                            <div>
+                                                <LinearProgress
+                                                    variant="determinate"
+                                                    value={60}
+                                                    sx={{
+                                                        height: '17px',
+                                                        borderRadius: '21px',
+                                                        width: '210px',
+                                                        bgcolor: '#E0E0E0',
+                                                        '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
+                                                    }}
+                                                />
+                                            </div>
+                                            <h4>01</h4>
+                                        </div>
+                                        <div className="d-flex justify-content-end gap-2 align-items-center">
+                                            <div className="d-flex justify-content-end align-items-center" >
+
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+
+
+                                            </div>
+                                            <div>
+                                                <LinearProgress
+                                                    variant="determinate"
+                                                    value={40}
+                                                    sx={{
+                                                        height: '17px',
+                                                        borderRadius: '21px',
+                                                        width: '210px',
+                                                        bgcolor: '#E0E0E0',
+                                                        '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
+                                                    }}
+                                                />
+                                            </div>
+                                            <h4>01</h4>
+                                        </div>
+                                        <div className="d-flex justify-content-end gap-2 align-items-center">
+                                            <div className="d-flex justify-content-end align-items-center" >
+                                                <span class="fa fa-star checked"></span>
+                                            </div>
+                                            <div>
+                                                <LinearProgress
+                                                    variant="determinate"
+                                                    value={20}
+                                                    sx={{
+                                                        height: '17px',
+                                                        borderRadius: '21px',
+                                                        width: '210px',
+                                                        bgcolor: '#E0E0E0',
+                                                        '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
+                                                    }}
+                                                />
+                                            </div>
+                                            <h4>01</h4>
+                                        </div>
+                                    </Stack>
+                                </div>
+                                <div class="d-lg-flex gap-3 align-items-center mt-5 mx-3 px-5 d-sm-block">
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <h4 class="text-primary percent">4.8</h4>
+                                        <div class="percent1"> 
+                                            <h4>12 Ratings</h4>
+                                            <h4>42 Reviews</h4>
+                                        </div>
                                     </div>
-                                    <div className="d-flex justify-content-end gap-2 align-items-center">
-                                        <div className="d-flex justify-content-end align-items-center" >
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
+                                </div>
 
-                                        </div>
-                                        <div>
-                                            <LinearProgress
-                                                variant="determinate"
-                                                value={80}
-                                                sx={{
-                                                    height: '17px',
-                                                    borderRadius: '21px',
-                                                    width: '250px',
-                                                    bgcolor: '#E0E0E0',
-                                                    '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
-                                                }}
-                                            />
-                                        </div>
-                                        <h4>02</h4>
-                                    </div>
-                                    <div className="d-flex justify-content-end gap-2 align-items-center">
-                                        <div className="d-flex justify-content-end align-items-center" >
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-
-
-                                        </div>
-                                        <div>
-                                            <LinearProgress
-                                                variant="determinate"
-                                                value={60}
-                                                sx={{
-                                                    height: '17px',
-                                                    borderRadius: '21px',
-                                                    width: '250px',
-                                                    bgcolor: '#E0E0E0',
-                                                    '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
-                                                }}
-                                            />
-                                        </div>
-                                        <h4>01</h4>
-                                    </div>
-                                    <div className="d-flex justify-content-end gap-2 align-items-center">
-                                        <div className="d-flex justify-content-end align-items-center" >
-
-                                            <span class="fa fa-star checked"></span>
-                                            <span class="fa fa-star checked"></span>
-
-
-                                        </div>
-                                        <div>
-                                            <LinearProgress
-                                                variant="determinate"
-                                                value={40}
-                                                sx={{
-                                                    height: '17px',
-                                                    borderRadius: '21px',
-                                                    width: '250px',
-                                                    bgcolor: '#E0E0E0',
-                                                    '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
-                                                }}
-                                            />
-                                        </div>
-                                        <h4>01</h4>
-                                    </div>
-                                    <div className="d-flex justify-content-end gap-2 align-items-center">
-                                        <div className="d-flex justify-content-end align-items-center" >
-                                            <span class="fa fa-star checked"></span>
-                                        </div>
-                                        <div>
-                                            <LinearProgress
-                                                variant="determinate"
-                                                value={20}
-                                                sx={{
-                                                    height: '17px',
-                                                    borderRadius: '21px',
-                                                    width: '250px',
-                                                    bgcolor: '#E0E0E0',
-                                                    '& .MuiLinearProgress-bar': { bgcolor: '#364FB2' },
-                                                }}
-                                            />
-                                        </div>
-                                        <h4>01</h4>
-                                    </div>
-                                </Stack>
-                                 <div className="d-lg-flex align-items-center mt-5 gap-3 px-5 d-sm-block" >             
-                                {/* <Stack direction="row"> */}
-                                    <h4 className="text-primary" class="">4.8</h4>
-                                    <div>
-                                        <p>12 Ratings</p>
-                                        <p>42 Reviews</p>
-                                    </div>
-                                {/* </Stack> */}
-                                </div>  
                             </div>
                         </div>
                         {/* 

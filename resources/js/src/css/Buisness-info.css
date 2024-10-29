@@ -39,23 +39,21 @@
 
 /* =======Review====== */
 
-/* .text-primary {
+.percent {
     --bs-text-opacity: 1;
     color: #364FB2 !important;
-    margin-top: 6rem;
-    font-size: 40px;
+    font-size: 46.17px;
     font-weight: 700;
-    margin-left: 3rem;
-    font-family: 'Montserrat';
-} */
-
-
-/* .rat {
-    margin-top: 5rem;
-    margin-left: 3rem;
-    font-size: 22px;
+    height: 71.04px;
     font-family: 'Open Sans';
-}  */
+}
+.percent1{
+    font-family: 'Montserrat';
+    font-size: 26.08px;
+    font-weight: 400;
+    height:84.12px;
+    
+}
 
 .checked {
     color: #364FB2;
