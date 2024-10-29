@@ -29,13 +29,13 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-3 col-sm-6 mb-4">
+                        <div className="col-md-3 col-sm-6 mb-4 ms-5 text-start" >
                             <ul className="list-unstyled">
-                                < h5 className="font-weight-bold2">
+                                < h5 className="font-weight-bold2 text-start">
                                     {" "}
                                     <b>MENU</b>
                                 </h5>
-                                <li className="my-2">
+                                <li className="my-2 text-start">
                                     <img
                                         src={vertical_line}
                                         alt="contact"
@@ -43,7 +43,7 @@ const Footer = () => {
                                     />
                                 </li>
                             </ul>
-                            <div className="align-items-center1">
+                            <div className="align-items-center">
                                 <h6 className="text-white mb-0">
                                     Business Solution
                                 </h6> <br />
@@ -54,11 +54,11 @@ const Footer = () => {
 
                         <div className="col-md-3 col-sm-6 mb-4">
                             <ul className="list-unstyled">
-                                <h5 className="font-weight-bold3">
+                                <h5 className="font-weight-bold3 text-start">
                                     {" "}
                                     <b>CONTACT-US</b>
                                 </h5>
-                                <li className="my-2">
+                                <li className="my-2 text-start">
                                     <img
                                         src={vertical_line}
                                         alt="contact"
@@ -100,11 +100,11 @@ const Footer = () => {
 
                         <div className="col-md-3 col-sm-6 mb-4">
                             <ul className="list-unstyled text-center">
-                                <h5 className="font-weight-bold" class="news1">
+                                <h5 className="font-weight-bold text-start">
                                     {" "}
                                     <b>NEWS LETTER</b>
                                 </h5>
-                                <li className="my-2" class="news">
+                                <li className="my-2 text-start">
                                     <img
                                         src={vertical_line}
                                         alt="contact"
@@ -113,18 +113,18 @@ const Footer = () => {
                                 </li>
                             </ul>
 
-                            <p class="subscri fs-6" >Subscribe to our new channel to get latest updates</p>
+                            <p class="subscri fs-6 text-start" >Subscribe to our new channel to get latest updates</p>
 
-                            {/* <input class="email1" type="text" name="email" placeholder="Enter your email" /> */}
-                            {/* <div class="subsc"> */}
-                            {/* <button class="email2">SUBSCRIBE</button> */}
-                            {/* </div>/ */}
-                            <div className="d-flex justify-content-center aligin-items-center">
+                            {/* <input class="email1" type="text" name="email" placeholder="Enter your email" />
+                            <div class="subsc">
+                            <button class="email2">SUBSCRIBE</button>
+                            </div> */}
+                            <div className="d-flex justify-content-start aligin-items-center start">
                                 <div className="d-flex flex-column align-items-center me-4">
                                     <a href="#" className="me-2">
                                         <img
                                             src={facebook}
-                                            alt="facebook"
+                                            alt="facebook"x
                                             className="img-fluid1"
                                         />
                                     </a>

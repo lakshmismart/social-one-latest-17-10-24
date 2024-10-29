@@ -298,7 +298,7 @@ class Home extends Component{
 
             <section className="nearbyshops mt-3">
                 <div className="container">
-                    <p className='h4 fw-bold text-primary my-3'>Top Picks For You</p>
+                    <p className='h4 fw-bold text-primary my-3 text-primary top'>Top Picks For You</p>
                         <Slider {...settings} className="border shadow p-3">
                         {relatedShops.map((shop, index) => (
                             <a href={`${BASE_URL}/#/business-info/${shop.id}`} className='text-decoration-none'>
@@ -331,7 +331,7 @@ class Home extends Component{
                                             <p className="text-center text-white">Business Image not Unavailable</p>
                                         </div>
                                     )}
-                                    <Box className="shoplist-details mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin:'5% auto'}}>
+                                    <Box className="shoplist-details gap-2 mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin:'5% auto'}}>
                                         <Box className="image-container image-container-small">
                                             <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                         </Box>
@@ -418,9 +418,9 @@ class Home extends Component{
             <section className="steps">
                 <div className="container">
                     <h2 className="steps-heading">Simple Steps To Manage Your Business<br/> Accounts</h2>
-                    <div className="lite">
-                        <div className="step">
-                            <div className="row">
+                    {/* <div className="lite"> */}
+                        {/* <div className="step"> */}
+                            <div className="row mt-5">
                                 <div className="col-md-6 position-relative">
 
                                 <div className="step d-flex align-items-start">
@@ -442,7 +442,7 @@ class Home extends Component{
                                     </div>
                                     <div className="step-content">
                                     <h4>Add Business Details</h4>
-                                    <p>Discover Exclusive Deals And Read Reviews About Your Favorite Stores, Helping You Shop Smarter.</p>
+                                    <p>Discover Exclusive Deals And Read Authentic <br/> Reviews About Your Favorite Stories, Helping You <br/> Shop Smarter And Save More.</p>
                                     </div>
                                 </div>
 
@@ -455,17 +455,17 @@ class Home extends Component{
                                     </div>
                                     <div className="step-content">
                                     <h4>Maintain Your Profile</h4>
-                                    <p>Discover Exclusive Deals And Read Authentic Reviews About Your Favorite Stores.</p>
+                                    <p>Discover Exclusive Deals And Read Authentic  <br/> Reviews About Your Favorite Stores.</p>
                                     </div>
                                 </div>
                                 </div>
 
-                                <div className="col-md-6">
+                                <div className="col-md-6 my-5">
                                     <img src= {Group_1274} className="img-fluid" alt="Step 3" />
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        {/* </div> */}
+                    {/* </div> */}
                 </div>
             </section>
 
