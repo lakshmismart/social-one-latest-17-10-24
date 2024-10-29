@@ -85,7 +85,7 @@ class Home extends Component{
         const apiKey = '6caf98b6bc8c4231be6aeb8c5e0505b9'; // Replace with your API key
         // const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${apiKey}`;
         const url =`https://api.geoapify.com/v1/geocode/reverse?lat=${latitude}&lon=${longitude}&apiKey=${apiKey}`;
-       
+
         fetch(url)
             .then(response => response.json())
             .then(data => {
@@ -106,7 +106,7 @@ class Home extends Component{
             });
     }
 
-    sendCurrentLocation(latitude, longitude, address) {    
+    sendCurrentLocation(latitude, longitude, address) {
         console.log("inside function : ",latitude, longitude, address);
         const url = "http://127.0.0.1:8000/api/get-related-business";
         fetch(url, {
@@ -114,7 +114,7 @@ class Home extends Component{
             headers: {
                 'Content-Type': 'application/json',
             },
-            
+
             body: JSON.stringify({ latitude, longitude, address }),
         })
         .then(response => {
@@ -129,7 +129,7 @@ class Home extends Component{
             console.log("actualAddress : ", actual_address);
             console.log('response_data : ', related_address);
             this.setState({ relatedShops: related_address });
-    
+
             const shopsWithImageError = data.shops.map(shop => ({
                 ...shop,
                 imageError: false // Initialize imageError for each shop
@@ -194,7 +194,7 @@ class Home extends Component{
 
     fetchSuggestions = (query) => {
         console.log('inside fetch function : ', query);
-        if (query.length > 1) {           
+        if (query.length > 1) {
             fetch(`http://127.0.0.1:8000/api/search-suggestions/${query}`)
                 .then(response => response.json())
                 .then(data => {
@@ -215,13 +215,13 @@ class Home extends Component{
         console.log(query)
         this.setState({ search_field: query });
         this.fetchSuggestions(query); // Call the API with the query
-    };    
+    };
 
     handleImageError = (index) => {
         console.log("Image failed to load for shop index:", index);
-    
+
         const updatedShops = [...this.state.relatedShops];
-    
+
         if (updatedShops[index]) {
             updatedShops[index].imageError = true;
             console.log("Updated Shops : ",updatedShops)
@@ -230,7 +230,7 @@ class Home extends Component{
             console.error(`Shop at index ${index} does not exist.`);
         }
     };
-    
+
     render(){
         const { location, relatedShops, suggestions} = this.state;
         const settings = {
@@ -239,7 +239,7 @@ class Home extends Component{
             speed: 500,
             slidesToShow: 3,
             slidesToScroll: 1,
-            nextArrow: <SampleNextArrow />,          
+            nextArrow: <SampleNextArrow />,
             prevArrow: <SamplePrevArrow />,
             responsive: [
                 {
@@ -269,29 +269,30 @@ class Home extends Component{
                     <div className="row justify-content-around align-items-center">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12" w-50>
                             <div className="search-box">
-                            <h1>Discover The <span className="text-primary">Best Local Businesses </span>And Share Your Experiences.</h1>
+                            <h1>Discover The <span className="text-primary">Best Local <br/>Businesses</span> And Share <br />Your Experiences.</h1>
                         </div>
-                        <div className="fsd justify-content-between">                               
+                        <br />
+                        <div className="fsd justify-content-between">
                             <div className="input-container">
                                 <input type="text" name="search_field" onChange={this.handleChange} placeholder="Search The Shops" />
-                                
+
                                 <div className="image-container image-container-small d-flex">
                                     <img src={search} alt="Business Image" className="img-fluid" />
                                 </div>
-                            </div>                    
+                            </div>
                             <Button variant="" className="manage-button" href="/#/create-business">Manage Business</Button>
                         </div>
                         <div id="suggest-contain" className="suggestion-container">
                             <ul className="suggest">
-                                {suggestions.map((suggest , index)=>(  
+                                {suggestions.map((suggest , index)=>(
                                     <a href={`${BASE_URL}/#/business-info/${suggest.id}`} className='text-decoration-none'>
-                                        <li className="suggestion-list" key={index}>{suggest.business_name}</li>                                       
-                                    </a>                                      
+                                        <li className="suggestion-list" key={index}>{suggest.business_name}</li>
+                                    </a>
                                 ))}
                             </ul>
-                        </div>                           
-                    </div>      
-                    <div className="image-container image-container-large col-lg-6 col-md-6 col-sm-12 col-xs-12">                        
+                        </div>
+                    </div>
+                    <div className="image-container image-container-large col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <img src={Group_1260} alt="Business Image" className="img-fluid" />
                     </div>
                     </div>
@@ -300,21 +301,21 @@ class Home extends Component{
 
             <section className="nearbyshops mt-3">
                 <div className="container">
-                    <p className='h4 fw-bold text-primary my-3'>Top Picks For You</p>   
-                        <Slider {...settings} className="border shadow p-3">                        
-                        {relatedShops.map((shop, index) => (  
-                            <a href={`${BASE_URL}/#/business-info/${shop.id}`} className='text-decoration-none'>                      
-                                <div className="shop-card p-3" key={index}>                                        
+                    <p className='h4 fw-bold text-primary my-3'>Top Picks For You</p>
+                        <Slider {...settings} className="border shadow p-3">
+                        {relatedShops.map((shop, index) => (
+                            <a href={`${BASE_URL}/#/business-info/${shop.id}`} className='text-decoration-none'>
+                                <div className="shop-card p-3" key={index}>
                                     {shop.business_profile ? (
                                         <div className="business-fixed-container">
-                                            <div className="image-container rounded h-100"> 
-                                            
-                                                {!shop.imageError ? (                                                
+                                            <div className="image-container rounded h-100">
+
+                                                {!shop.imageError ? (
                                                     <img
                                                     src={`${BASE_URL}/Business_images/${shop.business_profile}`} class="img-fluid-contain"
                                                     onError={ ()=>this.handleImageError(index)} // Handle error when image fails to load
                                                     alt="Image description"
-                                                    />                                                
+                                                    />
                                                 ):(
                                                     <div className="business-fixed-container bg-secondary py-5">
                                                         <div className="image-container image-container-small mx-auto d-flex justify-content-center pt-3">
@@ -324,26 +325,26 @@ class Home extends Component{
                                                     </div>
                                                 )}
                                             </div>
-                                        </div>                                        
+                                        </div>
                                         ): (
                                         <div className="business-fixed-container bg-secondary border border-info py-5">
                                             <div className="image-container image-container-small mx-auto d-flex justify-content-center pt-3">
-                                                <img src={camera_white} alt="shop1" className="img-fluid" /> 
-                                            </div>  
-                                            <p className="text-center text-white">Business Image not Unavailable</p> 
-                                        </div>                                           
-                                    )}                                     
+                                                <img src={camera_white} alt="shop1" className="img-fluid" />
+                                            </div>
+                                            <p className="text-center text-white">Business Image not Unavailable</p>
+                                        </div>
+                                    )}
                                     <Box className="shoplist-details mx-auto" xs={12} sm={4} sx={{ display: 'flex', alignItems: 'flex-start', margin:'5% auto'}}>
                                         <Box className="image-container image-container-small">
-                                            <img src={shop1_logo} alt="shop_logo" className="img-fluid" />                                           
+                                            <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                         </Box>
                                         <Box xs={12} sm={4} className="shoplist-rightcontentbox m-0 text-left">
                                             <p className="overflow-hidden m-0 shoplist-shop-heading heading-color medium-font-width">
                                                 {shop.business_name ? shop.business_name : 'Business Name Not Available'}
-                                            </p>                                           
+                                            </p>
                                             <Stack spacing={1}>
                                             <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly
-                                                sx={{ color: '#83C7EC' }} /> 
+                                                sx={{ color: '#83C7EC' }} />
                                             </Stack>
                                             <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
                                             <div className="image-container image-container-xsmall">
@@ -355,10 +356,10 @@ class Home extends Component{
                                             </Box>
                                         </Box>
                                     </Box>
-                                </div>  
-                            </a>                         
+                                </div>
+                            </a>
                         ))}
-                        </Slider>                  
+                        </Slider>
                 </div>
             </section>
 
@@ -366,10 +367,10 @@ class Home extends Component{
                 <div className="container ">
                     <div className="row custom-flex-wrapper">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 content-left">
-                            <h2 className="lites">Find Top-Rated Businesses<br />
+                            <h2 className="lites">Find Top-Rated Businesses <br/>
                             In Your Area Or Add Your Own.</h2>
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 content-right">                          
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 content-right">
                             <div className="image-container image-container-large justify-content-center">
                                 <img src={top_rated} className="img-fluid" alt="Top Rated Businesses" />
                             </div>
@@ -408,8 +409,9 @@ class Home extends Component{
                             <img src={offer_image} alt="Offers and Reviews" className="img-fluid" />
                         </div>
                         <div className="col-lg-5 col-md-5 col-sm-12 mns">
+                            <p className='now'>Now Its Easy to</p>
                             <h2>Get Offers And Reviews About The Stores</h2>
-                            <p>Discover exclusive deals and read authentic reviews about your favorite stores, helping you shop smarter and save more.</p>
+                            <p>Discover Exclusive Deals And Read Authentic Reviews <br /> About Your Favorite Stores, Helping You Shop Smarter <br /> And Save More.</p>
                             <button className="theme-blue text-white border-0 rounded p-2 col-md-6">Know More</button>
                         </div>
                     </div>
@@ -420,10 +422,10 @@ class Home extends Component{
                 <div className="container">
                     <h2 className="steps-heading">Simple Steps To Manage Your Business<br/> Accounts</h2>
                     <div className="lite">
-                        <div className="step">  
+                        <div className="step">
                             <div className="row">
                                 <div className="col-md-6 position-relative">
-                            
+
                                 <div className="step d-flex align-items-start">
                                     <div className="step-number">
                                     <div className="circl">
@@ -432,11 +434,11 @@ class Home extends Component{
                                     </div>
                                     <div className="step-content">
                                     <h4>Create Account With Us</h4>
-                                    <p>Discover Exclusive Deals And Read Authentic Reviews About Your Favorite Stores, Helping You..</p>
+                                    <p>Discover Exclusive Deals And Read Authentic <br /> Reviews About Your Favorite Stores, Helping You..</p>
                                     </div>
                                 </div>
-                            
-                            
+
+
                                 <div className="step d-flex align-items-start">
                                     <div className="step-number">
                                     <div className="circl"> <img src={two} className="img-fluid" alt="Step 3" /></div>
@@ -446,8 +448,8 @@ class Home extends Component{
                                     <p>Discover Exclusive Deals And Read Reviews About Your Favorite Stores, Helping You Shop Smarter.</p>
                                     </div>
                                 </div>
-                            
-                                
+
+
                                 <div className="step d-flex align-items-start">
                                     <div className="step-number">
                                     <div className="circl">
@@ -460,21 +462,21 @@ class Home extends Component{
                                     </div>
                                 </div>
                                 </div>
-                            
-                                <div className="col-md-6">        
-                                    <img src= {Group_1274} className="img-fluid" alt="Step 3" />                        
+
+                                <div className="col-md-6">
+                                    <img src= {Group_1274} className="img-fluid" alt="Step 3" />
                                 </div>
-                            </div>                     
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section> 
+            </section>
 
             <section className="shop-details">
                 <div className="container">
                     <div className="row justify-content-center align-items-center">
-                        <div className="col-lg-6 col-md-12 col-sm-12 image-container image-container-large">
-                            <img src={Frame} alt="Shop Details" className="img-fluid" />
+                        <div className="col-lg-6 col-md-12 col-sm-12 image-container image-container-large" >
+                            <img src={Frame} alt="Shop Details" className="img-fluid4" />
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12 shop-right text-md-left">
                             <h2>Get The Exact And Updated <br/> Details Of The Shop.</h2>
@@ -497,8 +499,8 @@ class Home extends Component{
                                     </div>
                                     <p className="text-white">Explore Shop By Yourself</p>
                                 </div>
-                            </div>                     
-                        </div>                
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -511,8 +513,8 @@ class Home extends Component{
                             <img src={Group_1280} alt="Offers and Reviews" className="img-fluid" />
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 mns">
-                            <h2 className="mns-offer-heading">Manage Your All Business In One Platformer</h2>
-                            <p>Easily Manage All Your Businesses From A Single Platform. Simplify Operations, Track Performance, And Boost Efficiency With Seamless Tools Designed To Support Your Growth And Success.</p>
+                            <h2 className="mns-offer-heading">Manage Your All Business In <br /> One Platformer</h2>
+                            <p>Easily Manage All Your Businesses From A Single Platform. <br /> Simplify Operations, Track Performance, And Boost <br /> Efficiency With Seamless Tools Designed To Support Your <br /> Growth And Success.</p>
                         </div>
                     </div>
                 </div>
@@ -543,13 +545,13 @@ class Home extends Component{
             </section>
             <Footer />
              </div>
-             
-            
-            
+
+
+
             )
 
 
-    }    
+    }
 }
 
 // Custom next arrow for slider
@@ -567,7 +569,7 @@ function SampleNextArrow(props) {
                 height: "30px",
                 zIndex: 1,           // Ensure it is above other elements
                 right: "-10px",      // Position it relative to the right
-                display: 'flex', 
+                display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
                 color: 'blue',      // Arrow color
@@ -603,7 +605,7 @@ function SamplePrevArrow(props) {
                 alignItems: 'center',
                 color: 'blue',      // Arrow color
                 fontSize: '30px',    // Adjust the size of the arrow
-                cursor: 'pointer', 
+                cursor: 'pointer',
                 boxshadow :'0px 2px 5px rgba(0,0,0,0.1)',   // Make it clickable
                 top :'55%',  // Make it clickable
             }}
