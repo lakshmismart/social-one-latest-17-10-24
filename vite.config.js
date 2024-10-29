@@ -8,8 +8,16 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    resolve: {
+        alias: {
+          jquery: 'jquery', // Import jQuery directly
+        },
+      },
     
 });
+
+
+
 
 
 // import { defineConfig } from 'vite';

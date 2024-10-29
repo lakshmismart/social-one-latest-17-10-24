@@ -9,10 +9,11 @@
         
         
         body {
-            font-family: Arial, sans-serif;
+            font-family: Montserrat;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: #f6f6f699;
         }
         .theme-blue{
             background: #4563DA;

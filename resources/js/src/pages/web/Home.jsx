@@ -6,9 +6,6 @@ import Stack from '@mui/material/Stack';
 import Rating from '@mui/material/Rating';
 
 import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-
 
 import shop1 from '../../images/shops/shop-img-1.png';
 import shop1_logo from '../../images/shops/shop1-logo.png';

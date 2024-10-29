@@ -4,11 +4,11 @@ import Layout from "./layouts/Layout";
 import $ from "jquery"; // Import jQuery directly
 import 'datatables.net-dt/css/dataTables.dataTables.css';
 import 'datatables.net';
-// import { BASE_URL } from "../../../App";
+import { BASE_URL } from "../../../App";
 
 import './admin-css/main.css';
 
-const Business = () => {
+const Table = () => {
     useEffect(() => {
         const dataTable = $('#example').DataTable({
             "lengthMenu": [10, 25, 50, 100], // Keeping the dropdown for 10, 25, 50 entries
@@ -97,4 +97,4 @@ const Business = () => {
     );
 };
 
-export default Business;
+export default Table;

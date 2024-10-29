@@ -36,7 +36,7 @@ class BusinessController extends Controller
         try {
             $business = $this->businessRepository->getBusinessById($id);
             if ($business) {
-                return response()->json($business);
+                return response()->json(['data'=>$business]);
             } else {
                 return response()->json(['message' => 'Business not found', 'status' => 404], 404);
             }

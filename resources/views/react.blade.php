@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <title>user page</title>
+    <title>Social One</title>
     @vite(['resources\js\app.js'])
-     <link
-        rel="stylesheet"
-        {{-- href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" --}}
-    />
+   
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/jquery.dataTables.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> <!-- Boxicons CDN -->
+
 </head>
 <body>
     <div class="container-section">

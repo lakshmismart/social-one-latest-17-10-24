@@ -139,6 +139,15 @@
         border-radius: 10px;
     }
 
+    .center-element{
+        position:absolute;
+        transform: translate(-50%, -50%);
+        left : 50%;
+        top : 50%;
+        margin: 0;
+        
+    }
+
 
 
     @media (max-width: 480px) {

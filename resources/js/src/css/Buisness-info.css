@@ -37,6 +37,8 @@
     border-radius: 35px;    
 }
 
+
+
 @media (max-width: 480px) {
     .Business-rate-section{
         height: 40px;
