@@ -1,0 +1,22 @@
+.breadcrumb-title {
+    font-size: 20px;
+    border-right: 1.5px solid #aaa4a4;
+}
+
+
+
+.bg-gradient-scooter{
+    background: linear-gradient(45deg, #17ead9, #6078ea) !important;
+}
+
+.widgets-icons-2 {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ededed;
+    font-size: 27px;
+    border-radius: 10px;
+}
+

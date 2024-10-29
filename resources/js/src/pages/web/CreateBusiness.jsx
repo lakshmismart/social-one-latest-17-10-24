@@ -187,11 +187,7 @@ const CreateBusiness = () => {
                                   onChange={handleChange}
                                   required
                                 />
-                              </Grid>
-                            
-
-                            
-                            
+                              </Grid>                            
                             </Grid>
                         
                         </TabPanel>

@@ -21,9 +21,11 @@ import Login from "./pages/web/login";
 
 // Import Admin Components
 import Sidebar from "./pages/admin/layouts/Sidebar";
+import Header from "./pages/admin/layouts/Header";
 import Dashboard from "./pages/admin/Dashboard";
 import Business from "./pages/admin/Business";
-
+import Form from "./pages/admin/Forms";
+import AdminLogin from "./pages/admin/AdminLogin";
 
 // protected Route
 import ProtectedRoute from "./pages/web/ProtectedRoute";
@@ -52,8 +54,11 @@ class App extends Component {
 
                     {/*Admin Routes */}
                     <Route path="/sidebar" element={<Sidebar/>}/>
+                    <Route path="/header" element={<Header/>}/>
                     <Route path="/dashboard" element={<Dashboard/>}/>
                     <Route path="/business" element={<Business/>}/>
+                    <Route path="/form" element={<Form/>}/>
+                    <Route path="/admin-login" element={<AdminLogin/>}/>
                 </Routes>
             </HashRouter>
         );

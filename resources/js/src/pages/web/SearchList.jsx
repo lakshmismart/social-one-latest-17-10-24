@@ -86,7 +86,7 @@ class SearchList extends Component {
                         <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                       </Box>
                       <Box xs={12} sm={4} className="shoplist-rightcontentbox m-0 text-left">
-                        <Typography variant="h6" gutterBottom className="overflow-hidden m-0 shoplist-shop-heading heading-color">
+                        <Typography variant="h6"  className="overflow-hidden m-0 shoplist-shop-heading heading-color">
                           Bhuvanesh Vegetable Shops
                         </Typography>
                         <Stack spacing={1}>
@@ -117,7 +117,7 @@ class SearchList extends Component {
                         <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                       </Box>
                       <Box xs={12} sm={4} className="shoplist-rightcontentbox m-0 text-left">
-                        <Typography variant="h6" gutterBottom className="overflow-hidden m-0 shoplist-shop-heading heading-color">
+                        <Typography variant="h6"  className="overflow-hidden m-0 shoplist-shop-heading heading-color">
                           Bhuvanesh Vegetable Shops
                         </Typography>
                         <Stack spacing={1}>
@@ -148,7 +148,7 @@ class SearchList extends Component {
                         <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                       </Box>
                       <Box xs={12} sm={4} className="shoplist-rightcontentbox m-0 text-left">
-                        <Typography variant="h6" gutterBottom className="overflow-hidden m-0 shoplist-shop-heading heading-color">
+                        <Typography variant="h6"  className="overflow-hidden m-0 shoplist-shop-heading heading-color">
                           Bhuvanesh Vegetable Shops
                         </Typography>
                         <Stack spacing={1}>

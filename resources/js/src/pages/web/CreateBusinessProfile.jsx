@@ -185,7 +185,7 @@ import { useParams } from 'react-router-dom';
                                         </Box>
                                         <Box className="m-0 text-left shop-info-content">                                            
                                             <div className="justify-cus-between">
-                                                <Typography variant="h6" gutterBottom className="large-font-width text-wrap text-start mx-2 shoplist-shop-heading heading-color">
+                                                <Typography variant="h6"  className="large-font-width text-wrap text-start mx-2 shoplist-shop-heading heading-color">
                                                 {posts ? posts.business_name : 'Loading...'}
                                                 </Typography>                                               
 
@@ -224,7 +224,7 @@ import { useParams } from 'react-router-dom';
                                         <div className="image-container image-container-small">
                                             <img src={rate_now} alt="rating-img" className="img-fluid"/>                                                        
                                         </div>
-                                        <Typography variant="h6" gutterBottom className="small-font-width text-white">
+                                        <Typography variant="h6"  className="small-font-width text-white">
                                                 Rate Now
                                         </Typography>
                                     </div>                                    
@@ -232,7 +232,7 @@ import { useParams } from 'react-router-dom';
                                         <div className="image-container image-container-xsmall">
                                             <img src={contact} alt="rating-img" className="img-fluid"/>                                                        
                                         </div>
-                                        <Typography variant="h6" gutterBottom className="small-font-width content-color content-grey">
+                                        <Typography variant="h6"  className="small-font-width content-color content-grey">
                                             {posts ? posts.contact_phone : 'contact_phone'}    
                                         </Typography>
                                     </Box>
@@ -240,7 +240,7 @@ import { useParams } from 'react-router-dom';
                                         <div className="image-container image-container-xsmall">
                                             <img src={time} alt="rating-img" className="img-fluid"/>                                                        
                                         </div>
-                                        <Typography variant="h6" gutterBottom className="small-font-width content-color content-grey">
+                                        <Typography variant="h6"  className="small-font-width content-color content-grey">
                                             9am -10pm
                                         </Typography>
                                     </Box>
@@ -441,7 +441,7 @@ import { useParams } from 'react-router-dom';
                                                         <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                                     </Box>
                                                     <Box xs={12} sm={4} className="shoplist-rightcontentbox m-0 text-left">
-                                                        <Typography variant="h6" gutterBottom className="overflow-hidden m-0 shoplist-shop-heading heading-color">
+                                                        <Typography variant="h6"  className="overflow-hidden m-0 shoplist-shop-heading heading-color">
                                                         Bhuvanesh Vegetable Shops
                                                         </Typography>
                                                         <Stack spacing={1}>
@@ -471,7 +471,7 @@ import { useParams } from 'react-router-dom';
                                                 <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                             </Box>
                                             <Box xs={12} sm={4} className="shoplist-rightcontentbox m-0 text-left">
-                                                <Typography variant="h6" gutterBottom className="overflow-hidden m-0 shoplist-shop-heading heading-color">
+                                                <Typography variant="h6"  className="overflow-hidden m-0 shoplist-shop-heading heading-color">
                                                     Sandosh Vegetable Shops
                                                 </Typography>
                                                 <Stack spacing={1}>
@@ -501,7 +501,7 @@ import { useParams } from 'react-router-dom';
                                                         <img src={shop1_logo} alt="shop_logo" className="img-fluid" />
                                                     </Box>
                                                     <Box xs={12} sm={4} className="shoplist-rightcontentbox m-0 text-left">
-                                                        <Typography variant="h6" gutterBottom className="overflow-hidden m-0 shoplist-shop-heading heading-color">
+                                                        <Typography variant="h6"  className="overflow-hidden m-0 shoplist-shop-heading heading-color">
                                                             Grace Super Market
                                                         </Typography>
                                                         <Stack spacing={1}>

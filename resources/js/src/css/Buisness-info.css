@@ -37,6 +37,32 @@
     border-radius: 35px;    
 }
 
+/* =======Review====== */
+
+.percent {
+    --bs-text-opacity: 1;
+    color: #364FB2 !important;
+    font-size: 46.17px;
+    font-weight: 700;
+    height: 71.04px;
+    font-family: 'Open Sans';
+}
+.percent1{
+    font-family: 'Montserrat';
+    font-size: 26.08px;
+    font-weight: 400;
+    height:84.12px;
+    
+}
+
+.checked {
+    color: #364FB2;
+    width: 30px;
+    font-size: 25px;
+}
+
+/* ===================== */
+
 @media (max-width: 480px) {
     .Business-rate-section{
         height: 40px;
@@ -45,5 +71,25 @@
     .related-section{
         margin:0px !important;
     }
+    /* .css-m69qwo-MuiStack-root{
+        display: block;
+    } */
+    /* .rat {
+        margin-top: 1rem;
+        margin-left: 9.5rem;
+        font-size: 22px;
+        font-family: 'Open Sans';
+    } */
+    /* .text-primary {
+        --bs-text-opacity: 1;
+        color: #364FB2 !important;
+        margin-top: 3rem;
+        font-size: 40px;
+        font-weight: 700;
+        margin-left: 11rem;
+        font-family: 'Montserrat';
+    } */
 }
+
+
 
